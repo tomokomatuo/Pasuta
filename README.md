@@ -44,17 +44,22 @@
 
 * テーブル
 
+<<<<<<< HEAD
 |      |   テーブル理論名    |    物理名     |                     備考                                           　　　 |
+=======
+|      |   テーブル理論名    |    物理名      |                     備考                                           　　　|
+>>>>>>> e0f9fddaedbe8c7d4c8c0f8ed77694147fcbaf78
 | ---- | ---------------- | ------------- | ----------------------------------------------------------------------- |
-|  1   |  User情報         | User          |  ユーザーさんの基本ステータスを管理する。アドバイザーは（adviserカラムをtrueにする）|
-|  2   |  relationship情報 | relationship  |  フォローフォロワー機能を作るためのテーブル                                    |
+|  1   |  User情報         | User          |  ユーザーさんの基本ステータスを管理する。アドバイザーは（adviserカラムをtrueにする）       |
+|  2   |  relationship情報 | relationship  |  フォローフォロワー機能を作るためのテーブル                                       |
 |  3   | converstaion情報  | Conversation  |  誰と誰の会話かを区別するためのテーブル　　　                                   |
-|  ４  |  message情報      |  Message      |   複数の文章を管理するテーブル                                               |  
-|  5   |  review情報       |  Review       |  レビューを管理するテーブル                                                  |   
+|  ４   |  message情報      |  Message      |   複数の文章を管理するテーブル                                               |  
+|  5   |  review情報       |  Review       |  レビューを管理するテーブル                                                   |   
 
 
 * Userカラム
 
+<<<<<<< HEAD
 |      |   カラム理論名 |  カラム物理名      |    型    |  桁  | NOTNULL  | 主キー | index | コメント                       |
 | ---- | -------------| ---------------- | -------- |-----| -------- |------ |-------|------------------------------ |
 |  1   |  ユーザーid   |     id           |  integer |      |   true   | true  |       |  ユーザー id                   | 
@@ -76,6 +81,29 @@
 |  14  |  OAth       | last_sign_in_ip     |  inet    |    |          |       |        |                              |  
 |  15  |  パスワード   | password_digit      |  integer |    |   true   |       |        | パスワード認証                 |
 |  16  |  性別   　　　| gender              |  integer |    |   true   |       |        |  セレクトボックスで選ぶ         |  
+=======
+|      |   カラム理論名 |  カラム物理名        |    型    |  桁  | NOTNULL  | 主キー | index | コメント                       |
+| ---- | ------------| ------------------ | --------|------| -------- |------ |-------|---------------------------- |
+|  1   |  ユーザーid   |     id            |  integer |      |   true   | true  |       |  ユーザー id                 | 
+|  2   |  名前　　     |    name           |  string  |      |  true    |       |       |   ユーザー名       　　　     |
+|  3   |  email      |   email            |  string　|　    |   true   |       |       |    ユーザーアドレス             |
+|  ４   |  年齢        |    age             |  string  |     |   true   |       | true  |   セレクトボックスで選ぶ          |      
+|  5   |  住所        |   address          |  string  |     |   true   |       |       |  ユーザーの居住地              |
+|  6   |  ユーザーicon |       icon         |  image   |     |          |       |       |  ユーザーの画像                |
+|  7   |  服の写真     | clothes_image      |  image　 |     |          |       | true  |  アドバイザースタイリング写真       |
+|  9   |  アドバイザー   |    adviser         | boolean  |     |  true    |       |       | 　ユーザーを区別する             |
+|  6   |  自己紹介　　  |  content           | text     |     |          |       |       |  お悩みなどを記載               |
+|  7   |  電話番号     | phone_number       |  string　 |     |   true   |       |       |　ユーザーのコンタクト情報          |
+|  8   |  OAuth       |  provider          |  string  |     |          |       |        |                             |
+|  9   |  OAuth       |    uid             | string   |     |          |       |        |                             |
+|  10  |  OAuth　　    | sign_in_count      | text     |     |          |       |        |                             |
+|  11  |  OAuth       | current_sign_in_at | datetime |     |          |       |        |                             |
+|  12  |  OAth        | last_sign_in_at    | datetime |     |          |       |        |                             |       
+|  13  |  OAuth       | current_sign_in_ip |  inet    |     |          |       |        |                             |
+|  14  |  OAth        | last_sign_in_ip    |  inet    |     |          |       |        |                             |  
+|  15  |  パスワード     | password_digit     |  integer |     |   true   |       |        | パスワード認証                 |
+|  16  |  性別   　　　 | gender             |  integer |     |   true   |       |        |  セレクトボックスで選ぶ           |  
+>>>>>>> e0f9fddaedbe8c7d4c8c0f8ed77694147fcbaf78
 
 * Relationshipカラム
 
